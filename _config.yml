@@ -1,6 +1,5 @@
 theme: jekyll-theme-midnight
 name: PyQtricksz
 title: PyQtricks
-baseurl: /pyqtricks
 github:
     is_project_page: false
