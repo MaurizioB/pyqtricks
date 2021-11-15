@@ -2,16 +2,15 @@
 layout: default
 ---
 <h1>{{ page.title | escape }}</h1>
-{{ page.date }} o {{ page.date | date: site.date_format }}
-{% assign catCount = page.categories.size %}
+{{ page.date | date: site.date_format }}
 
 {% if page.date != nil %}
 <span class="date">{{ page.date_formatted }}</span>
-    {% if catCount > 0 %} | {% endif %}
+    {% if page.categories.size > 0 %} | {% endif %}
 {% endif %}
-{% if catCount > 0 %}
+{% if page.categories.size > 0 %}
       <span>Categories: 
-        {% for cat in page.categories limit: catCount - 1 %}
+        {% for cat in page.categories%}
             {{ cat }}{% if forloop.last == true %}{%break %}{% endif %}, 
         {% endfor %}
       </span>
