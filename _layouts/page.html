@@ -5,6 +5,7 @@ layout: default
 <h1>{{ page.title | escape }}</h1>
 {% if page.date %}
 <span class="date">{{ page.date }}</span>
+{% endif %}
 {% if page.categories.size > 0 %}
       <span>Categories: 
         {% for cat in page.categories %}
