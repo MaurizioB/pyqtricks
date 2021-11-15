@@ -2,5 +2,5 @@
 layout: default
 ---
 {% for category in site.categories %}
-    <h2>{{category}}</h2>
+    <li><a href="{{category.url}}"><strong>{{category|first}}</strong></a></li>
 {% endfor %}
