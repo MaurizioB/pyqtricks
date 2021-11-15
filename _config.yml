@@ -1,11 +1,16 @@
 theme: jekyll-theme-midnight
 name: PyQtricks
+title: PyQtricks
 markdown: kramdown
 highlighter: rouge
+
 dateFormat: "%Y-%m-%d"
+excerpt_separator: <!--more-->
+
 plugins:
   - jekyll-paginate
 paginate: 5
 paginate_path: "/:num/"
+
 github:
     is_project_page: false
