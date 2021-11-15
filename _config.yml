@@ -6,6 +6,7 @@ highlighter: rouge
 
 date_format: "%Y-%m-%d"
 excerpt_separator: <!--more-->
+permalink: /:year/:month/:day/title.html
 
 plugins:
   - jekyll-paginate
