@@ -40,8 +40,10 @@
         </div>
         <div id="pages"><ul>
         {% for p in site.pages %}
-            {% if page.url != p.url And p.title And p.title != nil %}
-                <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+            {% if page.url != p.url %}
+                {% if p.title And p.title != nil %}
+                    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% endif %}
             {% endif %}
         {% endfor %}
         </ul></div>
