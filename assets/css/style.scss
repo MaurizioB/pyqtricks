@@ -1,12 +1,9 @@
 ---
 ---
 @import "{{ site.theme }}";
-#forkme_banner{ display: none !important; }
-
-footer {
-  display: none !important;
+#header {
+  display: none;
 }
-
-.btn {
-  display: none !important;
+section::first {
+  margin-top: 10px;
 }
