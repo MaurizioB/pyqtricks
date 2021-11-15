@@ -3,6 +3,7 @@ name: PyQtricksz
 title: PyQtricks
 markdown: kramdown
 highlighter: rouge
+dateFormat: "%Y-%m-%d"
 plugins:
   - jekyll-paginate
 paginate: 5
