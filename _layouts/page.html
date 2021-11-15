@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h1>{{ page.title | escape }}</h1>
-{% if page.categories != empty %}
+{% unless page.categories == empty %}
       <span>Categories: </span><span>{{ page.categories }}</span>
-{% endif %}
+{% endunless %}
 {{ content }}
