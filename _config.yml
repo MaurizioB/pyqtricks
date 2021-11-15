@@ -1,6 +1,5 @@
 theme: jekyll-theme-midnight
-name: PyQtricksz
-title: PyQtricks
+name: PyQtricks
 markdown: kramdown
 highlighter: rouge
 dateFormat: "%Y-%m-%d"
