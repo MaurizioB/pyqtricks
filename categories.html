@@ -3,11 +3,4 @@ layout: default
 ---
 {% for category in site.categories %}
     <h2>{{category}}</h2>
-    {% for post in site.posts %}
-        {% for pc in post.categories %}
-            {% if pc == category %}
-                {{ post.title }}
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
 {% endfor %}
