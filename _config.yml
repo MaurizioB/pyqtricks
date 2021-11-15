@@ -3,5 +3,9 @@ name: PyQtricksz
 title: PyQtricks
 markdown: kramdown
 highlighter: rouge
+plugins:
+  - jekyll-paginate
+paginate: 5
+paginate_path: "/:num/"
 github:
     is_project_page: false
