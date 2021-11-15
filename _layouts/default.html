@@ -38,8 +38,7 @@
           <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
         </div>
-        <hr>
-        <ul>
+        <ul style="display: inline;">
         {% for page in site.pages %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
