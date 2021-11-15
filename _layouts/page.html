@@ -3,7 +3,13 @@ layout: default
 ---
 
 <h1>{{ page.title | escape }}</h1>
+{% if page.date %}
+<span class="date">{{ page.date }}</span>
 {% if page.categories.size > 0 %}
-      <span>Categories: </span><span>{{ page.categories }}</span>
+      <span>Categories: 
+        {% for cat in page.categories %}
+            {{ cat }}
+        {% endfor %}
+      </span>
 {% endif %}
 {{ content }}
