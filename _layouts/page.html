@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h1>{{ page.title | escape }}</h1>
-{{ page.date }} o {{ page.date_formatted }}
+{{ page.date }} o {{ page.date | date: site.date_format }}
 {% if page.date != nil %}
 <span class="date">{{ page.date_formatted }}</span>
 {% endif %}
