@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
-
 <h1>{{ page.title | escape }}</h1>
 {{ page.date }} o {{ page.date | date: site.date_format }}
+{% assign catCount = page.categories.size %}
+
 {% if page.date != nil %}
 <span class="date">{{ page.date_formatted }}</span>
+    {% if catCount > 0 %} | {% endif %}
 {% endif %}
-{% if page.categories.size > 0 %}
+{% if catCount > 0 %}
       <span>Categories: 
-        {% for cat in page.categories %}
-            {{ cat }}
+        {% for cat in page.categories limit: catCount - 1 %}
+            {{ cat }}{% if forloop.last == true %}{%break %}{% endif %}, 
         {% endfor %}
       </span>
 {% endif %}
+{% liquid
+  echo "asdfa"
+%}
 {{ content }}
