@@ -1,9 +1,8 @@
 ---
 layout: page
 title: What is a QWidget?
+categories: [QWidget]
 ---
-
-# What is a QWidget?
 
 Almost any UI toolkit uses the concept of *widget*, which is a graphical element 
 (usually rectangular shaped) used to show something to the user and possibly allow

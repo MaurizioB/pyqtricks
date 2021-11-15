@@ -18,7 +18,7 @@
     {% include head-custom.html %}
   </head>
   <body>
-      <div id="header">
+      <!--div id="header">
         <nav>
           <ul>
             <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
@@ -37,15 +37,20 @@
         <div id="title">
           <h1><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
         </div>
-
+        <hr>
+        <ul>
+        {% for page in site.pages %}
+          <li><a href="{{ page.url }}">{% page.title %}</a></li>
+        {% endfor %}
+        <hr>
         {{ content }}
 
       </section>
 
     </div>
+    <hr>
+    <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+    <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
   </body>
 </html>
