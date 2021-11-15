@@ -2,7 +2,7 @@
 title: What is a QWidget?
 ---
 
-#What is a QWidget?
+# What is a QWidget?
 
 Almost any UI toolkit uses the concept of *widget*, which is a graphical element 
 (usually rectangular shaped) used to show something to the user and possibly allow
@@ -27,7 +27,7 @@ alter the default behavior of existing widget, and how custom widgets can be cre
 
 <!--more-->
 
-##Painting
+## Painting
 
 Any widget that has to display some content (which is, almost *all*), has to implement
 the `paintEvent()`.
@@ -66,7 +66,7 @@ which will repaints the widget immediately (but, be aware, this is normally disc
 
 Painting, as said, has to be done exclusively on the `paintEvent()` implementation.
 
-###How does painting work?
+### How does painting work?
 
 A widget is usually drawn multiple times, not just once, and at least in the following cases:
 
@@ -129,6 +129,8 @@ the painting starts at the first pixel and extends to the given width and height
 this means that painting a 2x2 rectangle actually starts at 0x0 and extends to 3x3,
 because the width and height of the rectangle is considered from the "middle" of the
 pixels.
+
+## Event handling
 
 
 TBC
