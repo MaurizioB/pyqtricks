@@ -1,5 +1,7 @@
 theme: jekyll-theme-midnight
 name: PyQtricksz
 title: PyQtricks
+markdown: kramdown
+highlighter: rouge
 github:
     is_project_page: false
