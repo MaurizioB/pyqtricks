@@ -10,7 +10,7 @@ layout: default
 {% if page.categories.size > 0 %}
       <span>Categories: 
         {% for cat in page.categories%}
-            <a href"{{cat.url}}">{{ cat|first }}</a>{% if forloop.last == true %}{%break %}{% endif %}, 
+            <a href"{{cat.url}}">{{ cat|slugsize}}</a>{% if forloop.last == true %}{%break %}{% endif %}, 
         {% endfor %}
       </span>
 {% endif %}
