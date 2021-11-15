@@ -39,9 +39,9 @@
           <p>{{ site.description | default: site.github.project_tagline }}</p>
         </div>
         <div id="pages"><ul>
-        {% for page in site.pages %}
-            {% if page.title And page.title != nil %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% for p in site.pages %}
+            {% if page.url != p.url And p.title And p.title != nil %}
+                <li><a href="{{ p.url }}">{{ p.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul></div>
@@ -50,9 +50,9 @@
 
       </section>
 
-    </div>
     <hr>
     <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
     <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+    </div>
   </body>
 </html>
