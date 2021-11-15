@@ -12,10 +12,11 @@ title: PyQtricks
   </p>
   <div class="content">
     {{ post.excerpt }}
+    <a href="{{ post.url }}">Continue reading...</a>
   </div>
-  <a href="{{ post.url }}">continue reading</a>
 {% endfor %}
 
+<br/>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
