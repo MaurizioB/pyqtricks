@@ -4,7 +4,7 @@ title: PyQtricks
 markdown: kramdown
 highlighter: rouge
 
-dateformat: "%Y-%m-%d"
+date_format: "%Y-%m-%d"
 excerpt_separator: <!--more-->
 permalink: /:year/:month/:day/:title:output_ext
 
