@@ -7,6 +7,12 @@
 section {
   margin-top: 10px;
 }
-.pages ul li {
+#pages ul {
+    text-align: center;
+}
+#pages ul li {
     display: inline;
+    &:not(:last-child):after {
+        content: ' |';  
+    }
 }
