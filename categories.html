@@ -10,16 +10,17 @@ title: Categories
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}">
-    <a name="{{ category_name | slugize }}"></a>
+    <a name="{{ category_name | slugize }}">
+    <h2 class="category-head">{{ category_name }}</h2>
+    </a>
+    </div>
     {% for post in site.categories[category_name] %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-        <h2 class="category-head">{{ category_name }}</h2>
-        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" style="color: inherit;">
         <article class="archive-item">
             <h3>{{post.title}}</h3>
             {{ post.content | truncatewords: 60 | strip_html }}
         </article>
-    </a>
+        </a>
     {% endfor %}
   </div>
 {% endfor %}
