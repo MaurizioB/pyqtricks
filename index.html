@@ -7,7 +7,14 @@ title: PyQtricks
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">
-    <span class="date">{{ post.date | date: site.date_format }}</span>
+    <span class="date">{{ post.date | date: site.date_format }}</span> | 
+    {% if post.categories.size > 0 %}
+          <span>Categories: 
+            {% for cat in post.categories %}
+                <a href="{{ site.baseurl }}/categories/#{{ cat|slugize}}">{{ cat|slugize }}</a>{% if forloop.last == true %}{%break %}{% endif %}, 
+            {% endfor %}
+          </span>
+    {% endif %}
   </p>
   <div class="content">
     {{ post.excerpt }}
