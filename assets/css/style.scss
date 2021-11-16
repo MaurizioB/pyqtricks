@@ -19,12 +19,14 @@ section #title {
         content: ' |';  
     }
 }
-article.archive-item a {
-    color: inherit;
-    padding: 2px;
-    border: 1px inset none;
+div.archive-group {
+    padding: 6px;
+    border: 1px inset transparent;
     border-radius: 2px;
 }
-article.archive-item a:hover {
+div.archive-group:hover {
     border-color: lightGray;
+}
+div.archive-group a {
+    color: inherit;
 }
