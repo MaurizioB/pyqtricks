@@ -30,6 +30,9 @@ section #title {
     border: 1px inset transparent;
     border-radius: 2px;
 }
+.category-post h3 {
+    color: inherit;
+}
 .category-post:hover {
     border-color: lightGray;
 }
