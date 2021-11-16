@@ -1,6 +1,10 @@
 ---
 ---
 @import "{{ site.theme }}";
+body {
+    background: url("/assets/images/pyqtricks-alpha.png");
+    background-repeat: no-repeat;
+}
 #header {
   display: none;
 }
