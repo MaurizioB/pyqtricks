@@ -9,13 +9,13 @@ title: Categories
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}">
+    <div id="{{ category_name | slugize }}">
     <a name="{{ category_name | slugize }}">
     <h2 class="category-head">{{ category_name }}</h2>
-
+    </a>
     </div>
     {% for post in site.categories[category_name] %}
-        <div id="#category-post">
+        <div id="category-post">
         <a href="{{ site.baseurl }}{{ post.url }}" style="color: inherit;">
         <h3>{{post.title}}</h3>
         <article class="archive-item">
@@ -25,5 +25,6 @@ title: Categories
         </div>
     {% endfor %}
   </div>
+  <hr>
 {% endfor %}
 </div>
