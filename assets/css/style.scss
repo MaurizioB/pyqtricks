@@ -25,12 +25,12 @@ section #title {
         content: ' |';  
     }
 }
-#category-post {
+.category-post {
     padding: 6px;
     border: 1px inset transparent;
     border-radius: 2px;
 }
-#category-post:hover {
+.category-post:hover {
     border-color: lightGray;
 }
 article.archive-item a {
