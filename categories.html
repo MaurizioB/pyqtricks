@@ -16,7 +16,7 @@ title: Categories
     </div>
     {% for post in site.categories[category_name] %}
         <div class="category-post">
-        <a href="{{ site.baseurl }}{{ post.url }}" style="color: inherit;">
+        <a href="{{ site.baseurl }}{{ post.url }}">
         <h3>{{post.title}}</h3>
         <article class="archive-item">
             {{ post.content | truncatewords: 60 | strip_html }}
