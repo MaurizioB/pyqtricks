@@ -25,6 +25,9 @@ title: Categories
         </div>
     {% endfor %}
   </div>
-  <hr>
+  <br/>
+  {% if forloop.last != true %}
+    <hr>
+  {% endif %}
 {% endfor %}
 </div>
