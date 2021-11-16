@@ -11,6 +11,7 @@ title: Categories
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}">
     <a name="{{ category_name | slugize }}"></a>
+    {{ site.baseurl }}{{ post.url }}
     <a href="{{ site.baseurl }}{{ post.url }}">
     <h2 class="category-head">
     {{ category_name }}</h2>
