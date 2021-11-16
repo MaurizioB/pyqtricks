@@ -9,8 +9,9 @@ layout: default
 {% endif %}
 {% if page.categories.size > 0 %}
       <span>Categories: 
-        {% for cat in page.categories%}
-            <a href"{{cat.url}}">{{ cat|slugsize}}</a>{% if forloop.last == true %}{%break %}{% endif %}, 
+        {% for cat in page.categories %}
+            {{ cat }}
+            <a href="{{cat.url}}">{{ cat|slugsize }}</a>{% if forloop.last == true %}{%break %}{% endif %}, 
         {% endfor %}
       </span>
 {% endif %}
