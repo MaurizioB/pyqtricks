@@ -12,15 +12,17 @@ title: Categories
     <div id="#{{ category_name | slugize }}">
     <a name="{{ category_name | slugize }}">
     <h2 class="category-head">{{ category_name }}</h2>
-    </a>
+
     </div>
     {% for post in site.categories[category_name] %}
+        <div class="#category-post">
         <a href="{{ site.baseurl }}{{ post.url }}" style="color: inherit;">
+        <h3>{{post.title}}</h3>
         <article class="archive-item">
-            <h3>{{post.title}}</h3>
             {{ post.content | truncatewords: 60 | strip_html }}
         </article>
         </a>
+        </div>
     {% endfor %}
   </div>
 {% endfor %}
