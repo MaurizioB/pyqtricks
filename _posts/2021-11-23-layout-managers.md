@@ -77,6 +77,6 @@ see on theirs. The reality is that it almost *never* happens, because the user m
 
 Suppose you created the following layout in Designer:
 
-![1][no layout]
+[![no layout][1]][1]
 
   [1]: /assets/images/nolayout.png
