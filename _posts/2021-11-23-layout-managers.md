@@ -97,5 +97,5 @@ space in order to show their text.z
 
   [1]: /assets/images/nolayout.png
   [2]: /assets/images/nolayout-bigger-font.png
-  [3]: /assets/images/withlayout.png
+  [3]: /assets/images/withlayout-bigger.png
   [4]: /assets/images/withlayout.png
