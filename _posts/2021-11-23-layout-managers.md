@@ -82,7 +82,12 @@ Let's suppose you created the following layout in Designer:
 But the user has a much bigger default font size.  
 See what the same UI file would give as result:
 
-[![no layout bigger font][2][2]
+[![no layout bigger font][2]][2]
+
+Now, consider the same using a *proper* layout manager:
+
+[![with layout manager][3]][3]
 
   [1]: /assets/images/nolayout.png
   [2]: /assets/images/nolayout-bigger-font.png
+  [3]: /assets/images/withlayout.png
