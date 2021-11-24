@@ -84,10 +84,18 @@ See what the same UI file would give as result:
 
 [![no layout bigger font][2]][2]
 
+The logical choice would be to resize the window, but will it work?
+
+[![no resizing][3]][3]
+
 Now, consider the same using a *proper* layout manager:
 
-[![with layout manager][3]][3]
+[![with layout manager][4]][4]
+
+Obviously, the window is bigger, but that's expected: bigger fonts require more
+space in order to show their text.z
 
   [1]: /assets/images/nolayout.png
   [2]: /assets/images/nolayout-bigger-font.png
   [3]: /assets/images/withlayout.png
+  [4]: /assets/images/withlayout.png
