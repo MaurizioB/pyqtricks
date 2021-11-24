@@ -75,8 +75,14 @@ see on theirs. The reality is that it almost *never* happens, because the user m
   - have a different version of the toolkit that draws widgets in a
   slightly (but still important) different way;
 
-Suppose you created the following layout in Designer:
+Let's suppose you created the following layout in Designer:
 
 [![no layout][1]][1]
 
+But the user has a much bigger default font size.  
+See what the same UI file would give as result:
+
+[![no layout bigger font][2][2]
+
   [1]: /assets/images/nolayout.png
+  [2]: /assets/images/nolayout-bigger-font.png
